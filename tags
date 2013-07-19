@@ -1,0 +1,152 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BEACON_PROTOCOL	zre_interface.c	171;"	d	file:
+BEACON_VERSION	zre_interface.c	172;"	d	file:
+GET_BLOCK	zre_msg.c	71;"	d	file:
+GET_NUMBER	zre_msg.c	92;"	d	file:
+GET_OCTET	zre_msg.c	57;"	d	file:
+GET_STRING	zre_msg.c	115;"	d	file:
+MAX_BUFLEN	main.c	5;"	d	file:
+PUT_BLOCK	zre_msg.c	65;"	d	file:
+PUT_NUMBER	zre_msg.c	79;"	d	file:
+PUT_OCTET	zre_msg.c	51;"	d	file:
+PUT_STRING	zre_msg.c	107;"	d	file:
+STRING_MAX	zre_msg.c	48;"	d	file:
+USEC	main.c	6;"	d	file:
+_zre_group_t	zre_group.c	/^struct _zre_group_t {$/;"	s	file:
+_zre_interface_t	zre_interface.c	/^struct _zre_interface_t {$/;"	s	file:
+_zre_msg_t	zre_msg.c	/^struct _zre_msg_t {$/;"	s	file:
+_zre_peer_t	zre_peer.c	/^struct _zre_peer_t {$/;"	s	file:
+_zre_udp_t	zre_udp.c	/^struct _zre_udp_t {$/;"	s	file:
+address	zre_msg.c	/^    zframe_t *address;          \/\/  Address of peer if any$/;"	m	struct:_zre_msg_t	file:
+address	zre_udp.c	/^    struct sockaddr_in address;     \/\/  Own address$/;"	m	struct:_zre_udp_t	typeref:struct:_zre_udp_t::sockaddr_in	file:
+agent_beacon_send	zre_interface.c	/^agent_beacon_send (agent_t *self)$/;"	f	file:
+agent_destroy	zre_interface.c	/^agent_destroy (agent_t **self_p)$/;"	f	file:
+agent_new	zre_interface.c	/^agent_new (zctx_t *ctx, void *pipe)$/;"	f	file:
+agent_peer_delete	zre_interface.c	/^agent_peer_delete (const char *key, void *item, void *argument)$/;"	f	file:
+agent_ping_peer	zre_interface.c	/^agent_ping_peer (const char *key, void *item, void *argument)$/;"	f	file:
+agent_recv_from_api	zre_interface.c	/^agent_recv_from_api (agent_t *self)$/;"	f	file:
+agent_recv_from_peer	zre_interface.c	/^agent_recv_from_peer (agent_t *self)$/;"	f	file:
+agent_recv_udp_beacon	zre_interface.c	/^agent_recv_udp_beacon (agent_t *self)$/;"	f	file:
+agent_t	zre_interface.c	/^} agent_t;$/;"	t	typeref:struct:__anon2	file:
+beacon_t	zre_interface.c	/^} beacon_t;$/;"	t	typeref:struct:__anon1	file:
+broadcast	zre_udp.c	/^    struct sockaddr_in broadcast;   \/\/  Broadcast address$/;"	m	struct:_zre_udp_t	typeref:struct:_zre_udp_t::sockaddr_in	file:
+ceiling	zre_msg.c	/^    byte *ceiling;              \/\/  Valid upper limit for read pointer$/;"	m	struct:_zre_msg_t	file:
+close_keyboard	keyboard.c	/^void close_keyboard()$/;"	f
+connected	zre_peer.c	/^    bool connected;             \/\/  Peer is ready for work$/;"	m	struct:_zre_peer_t	file:
+cookies	zre_msg.c	/^    zframe_t *cookies;$/;"	m	struct:_zre_msg_t	file:
+ctx	zre_interface.c	/^    zctx_t *ctx;                \/\/  CZMQ context$/;"	m	struct:__anon2	file:
+ctx	zre_interface.c	/^    zctx_t *ctx;                \/\/  Our context wrapper$/;"	m	struct:_zre_interface_t	file:
+ctx	zre_peer.c	/^    zctx_t *ctx;                \/\/  CZMQ context$/;"	m	struct:_zre_peer_t	file:
+evasive_at	zre_peer.c	/^    uint64_t evasive_at;        \/\/  Peer is being evasive$/;"	m	struct:_zre_peer_t	file:
+expired_at	zre_peer.c	/^    uint64_t expired_at;        \/\/  Peer has expired by now$/;"	m	struct:_zre_peer_t	file:
+from	zre_msg.c	/^    char *from;$/;"	m	struct:_zre_msg_t	file:
+from	zre_udp.c	/^    char *from;                 \/\/  Sender address of last message$/;"	m	struct:_zre_udp_t	file:
+group	zre_msg.c	/^    char *group;$/;"	m	struct:_zre_msg_t	file:
+groups	zre_msg.c	/^    zlist_t *groups;$/;"	m	struct:_zre_msg_t	file:
+handle	zre_udp.c	/^    int handle;                 \/\/  Socket for send\/recv$/;"	m	struct:_zre_udp_t	file:
+host	zre_interface.c	/^    char *host;                 \/\/  Our host IP address$/;"	m	struct:__anon2	file:
+host	zre_udp.c	/^    char *host;                 \/\/  Our own address as string$/;"	m	struct:_zre_udp_t	file:
+id	zre_msg.c	/^    int id;                     \/\/  zre_msg message ID$/;"	m	struct:_zre_msg_t	file:
+identity	zre_interface.c	/^    char *identity;             \/\/  Our UUID as hex string$/;"	m	struct:__anon2	file:
+identity	zre_peer.c	/^    char *identity;             \/\/  Identity string$/;"	m	struct:_zre_peer_t	file:
+inbox	zre_interface.c	/^    void *inbox;                \/\/  Our inbox socket (ROUTER)$/;"	m	struct:__anon2	file:
+init_keyboard	keyboard.c	/^void init_keyboard()$/;"	f
+kbhit	keyboard.c	/^int kbhit()$/;"	f
+mailbox	zre_peer.c	/^    void *mailbox;              \/\/  Socket through to peer$/;"	m	struct:_zre_peer_t	file:
+main	main.c	/^int main (int argc, char *argv [])$/;"	f
+name	zre_group.c	/^    char *name;                 \/\/  Group name$/;"	m	struct:_zre_group_t	file:
+needle	zre_msg.c	/^    byte *needle;               \/\/  Read\/write pointer for serialization$/;"	m	struct:_zre_msg_t	file:
+own_groups	zre_interface.c	/^    zhash_t *own_groups;        \/\/  Groups that we are in$/;"	m	struct:__anon2	file:
+peer_groups	zre_interface.c	/^    zhash_t *peer_groups;       \/\/  Groups that our peers are in$/;"	m	struct:__anon2	file:
+peers	zre_group.c	/^    zhash_t *peers;             \/\/  Peers in group$/;"	m	struct:_zre_group_t	file:
+peers	zre_interface.c	/^    zhash_t *peers;             \/\/  Hash of known peers, fast lookup$/;"	m	struct:__anon2	file:
+pipe	zre_interface.c	/^    void *pipe;                 \/\/  Pipe back to application$/;"	m	struct:__anon2	file:
+pipe	zre_interface.c	/^    void *pipe;                 \/\/  Pipe through to agent$/;"	m	struct:_zre_interface_t	file:
+port	zre_interface.c	/^    int port;                   \/\/  Our inbox port number$/;"	m	struct:__anon2	file:
+port	zre_interface.c	/^    uint16_t port;$/;"	m	struct:__anon1	file:
+port	zre_msg.c	/^    int64_t port;$/;"	m	struct:_zre_msg_t	file:
+port_nbr	zre_udp.c	/^    int port_nbr;               \/\/  UDP port number we work on$/;"	m	struct:_zre_udp_t	file:
+protocol	zre_interface.c	/^    byte protocol [3];$/;"	m	struct:__anon1	file:
+readch	keyboard.c	/^int readch()$/;"	f
+s_delete_group	zre_group.c	/^s_delete_group (void *argument)$/;"	f	file:
+s_delete_peer	zre_peer.c	/^s_delete_peer (void *argument)$/;"	f	file:
+s_handle_io_error	zre_udp.c	/^s_handle_io_error (char *reason)$/;"	f	file:
+s_peer_send	zre_group.c	/^s_peer_send (const char *key, void *item, void *argument)$/;"	f	file:
+s_peer_send	zre_interface.c	/^s_peer_send (const char *key, void *item, void *argument)$/;"	f	file:
+s_require_peer	zre_interface.c	/^s_require_peer (agent_t *self, char *identity, char *address, int port)$/;"	f	file:
+s_require_peer_group	zre_interface.c	/^s_require_peer_group (agent_t *self, char *name)$/;"	f	file:
+s_uuid_str	zre_interface.c	/^s_uuid_str (uuid_t uuid)$/;"	f	file:
+sender	zre_udp.c	/^    struct sockaddr_in sender;      \/\/  Where last recv came from$/;"	m	struct:_zre_udp_t	typeref:struct:_zre_udp_t::sockaddr_in	file:
+status	zre_interface.c	/^    byte status;                \/\/  Our own change counter$/;"	m	struct:__anon2	file:
+status	zre_interface.c	/^    byte status;$/;"	m	struct:__anon1	file:
+status	zre_msg.c	/^    byte status;$/;"	m	struct:_zre_msg_t	file:
+status	zre_peer.c	/^    byte status;                \/\/  Our status counter$/;"	m	struct:_zre_peer_t	file:
+udp	zre_interface.c	/^    zre_udp_t *udp;             \/\/  UDP object$/;"	m	struct:__anon2	file:
+unused	zre_interface.c	/^    byte unused;$/;"	m	struct:__anon1	file:
+uuid	zre_interface.c	/^    uuid_t uuid;                \/\/  Our UUID as binary blob$/;"	m	struct:__anon2	file:
+uuid	zre_interface.c	/^    uuid_t uuid;$/;"	m	struct:__anon1	file:
+version	zre_interface.c	/^    byte version;$/;"	m	struct:__anon1	file:
+zre_group_destroy	zre_group.c	/^zre_group_destroy (zre_group_t **self_p)$/;"	f
+zre_group_join	zre_group.c	/^zre_group_join (zre_group_t *self, zre_peer_t *peer)$/;"	f
+zre_group_leave	zre_group.c	/^zre_group_leave (zre_group_t *self, zre_peer_t *peer)$/;"	f
+zre_group_new	zre_group.c	/^zre_group_new (char *name, zhash_t *container)$/;"	f
+zre_group_send	zre_group.c	/^zre_group_send (zre_group_t *self, zre_msg_t **msg_p)$/;"	f
+zre_interface_agent	zre_interface.c	/^zre_interface_agent (void *args, zctx_t *ctx, void *pipe)$/;"	f	file:
+zre_interface_destroy	zre_interface.c	/^zre_interface_destroy (zre_interface_t **self_p)$/;"	f
+zre_interface_join	zre_interface.c	/^zre_interface_join (zre_interface_t *self, const char *group)$/;"	f
+zre_interface_leave	zre_interface.c	/^zre_interface_leave (zre_interface_t *self, const char *group)$/;"	f
+zre_interface_new	zre_interface.c	/^zre_interface_new (void)$/;"	f
+zre_interface_recv	zre_interface.c	/^zre_interface_recv (zre_interface_t *self)$/;"	f
+zre_interface_shout	zre_interface.c	/^zre_interface_shout (zre_interface_t *self, zmsg_t **msg_p)$/;"	f
+zre_interface_whisper	zre_interface.c	/^zre_interface_whisper (zre_interface_t *self, zmsg_t **msg_p)$/;"	f
+zre_msg_address	zre_msg.c	/^zre_msg_address (zre_msg_t *self)$/;"	f
+zre_msg_address_set	zre_msg.c	/^zre_msg_address_set (zre_msg_t *self, zframe_t *address)$/;"	f
+zre_msg_cookies	zre_msg.c	/^zre_msg_cookies (zre_msg_t *self)$/;"	f
+zre_msg_cookies_set	zre_msg.c	/^zre_msg_cookies_set (zre_msg_t *self, zframe_t *frame)$/;"	f
+zre_msg_data	zre_msg.c	/^zre_msg_data (zre_msg_t *self)$/;"	f
+zre_msg_destroy	zre_msg.c	/^zre_msg_destroy (zre_msg_t **self_p)$/;"	f
+zre_msg_dump	zre_msg.c	/^zre_msg_dump (zre_msg_t *self)$/;"	f
+zre_msg_dup	zre_msg.c	/^zre_msg_dup (zre_msg_t *self)$/;"	f
+zre_msg_from	zre_msg.c	/^zre_msg_from (zre_msg_t *self)$/;"	f
+zre_msg_from_set	zre_msg.c	/^zre_msg_from_set (zre_msg_t *self, char *format, ...)$/;"	f
+zre_msg_group	zre_msg.c	/^zre_msg_group (zre_msg_t *self)$/;"	f
+zre_msg_group_set	zre_msg.c	/^zre_msg_group_set (zre_msg_t *self, char *format, ...)$/;"	f
+zre_msg_groups	zre_msg.c	/^zre_msg_groups (zre_msg_t *self)$/;"	f
+zre_msg_groups_append	zre_msg.c	/^zre_msg_groups_append (zre_msg_t *self, char *format, ...)$/;"	f
+zre_msg_groups_first	zre_msg.c	/^zre_msg_groups_first (zre_msg_t *self)$/;"	f
+zre_msg_groups_next	zre_msg.c	/^zre_msg_groups_next (zre_msg_t *self)$/;"	f
+zre_msg_groups_set	zre_msg.c	/^zre_msg_groups_set (zre_msg_t *self, zlist_t *groups)$/;"	f
+zre_msg_groups_size	zre_msg.c	/^zre_msg_groups_size (zre_msg_t *self)$/;"	f
+zre_msg_id	zre_msg.c	/^zre_msg_id (zre_msg_t *self)$/;"	f
+zre_msg_id_set	zre_msg.c	/^zre_msg_id_set (zre_msg_t *self, int id)$/;"	f
+zre_msg_new	zre_msg.c	/^zre_msg_new (int id)$/;"	f
+zre_msg_port	zre_msg.c	/^zre_msg_port (zre_msg_t *self)$/;"	f
+zre_msg_port_set	zre_msg.c	/^zre_msg_port_set (zre_msg_t *self, int64_t port)$/;"	f
+zre_msg_recv	zre_msg.c	/^zre_msg_recv (void *socket)$/;"	f
+zre_msg_send	zre_msg.c	/^zre_msg_send (zre_msg_t **self_p, void *socket)$/;"	f
+zre_msg_status	zre_msg.c	/^zre_msg_status (zre_msg_t *self)$/;"	f
+zre_msg_status_set	zre_msg.c	/^zre_msg_status_set (zre_msg_t *self, byte status)$/;"	f
+zre_msg_test	zre_msg.c	/^zre_msg_test (bool verbose)$/;"	f
+zre_peer_connect	zre_peer.c	/^zre_peer_connect (zre_peer_t *self, char *reply_to, char *address, int port)$/;"	f
+zre_peer_connected	zre_peer.c	/^zre_peer_connected (zre_peer_t *self)$/;"	f
+zre_peer_destroy	zre_peer.c	/^zre_peer_destroy (zre_peer_t **self_p)$/;"	f
+zre_peer_evasive_at	zre_peer.c	/^zre_peer_evasive_at (zre_peer_t *self)$/;"	f
+zre_peer_expired_at	zre_peer.c	/^zre_peer_expired_at (zre_peer_t *self)$/;"	f
+zre_peer_identity	zre_peer.c	/^zre_peer_identity (zre_peer_t *self)$/;"	f
+zre_peer_new	zre_peer.c	/^zre_peer_new (char *identity, zhash_t *container, zctx_t *ctx)$/;"	f
+zre_peer_refresh	zre_peer.c	/^zre_peer_refresh (zre_peer_t *self)$/;"	f
+zre_peer_send	zre_peer.c	/^zre_peer_send (zre_peer_t *self, zre_msg_t **msg_p)$/;"	f
+zre_peer_status	zre_peer.c	/^zre_peer_status (zre_peer_t *self)$/;"	f
+zre_peer_status_set	zre_peer.c	/^zre_peer_status_set (zre_peer_t *self, byte status)$/;"	f
+zre_udp_destroy	zre_udp.c	/^zre_udp_destroy (zre_udp_t **self_p)$/;"	f
+zre_udp_from	zre_udp.c	/^zre_udp_from (zre_udp_t *self)$/;"	f
+zre_udp_handle	zre_udp.c	/^zre_udp_handle (zre_udp_t *self)$/;"	f
+zre_udp_host	zre_udp.c	/^zre_udp_host (zre_udp_t *self)$/;"	f
+zre_udp_new	zre_udp.c	/^zre_udp_new (int port_nbr)$/;"	f
+zre_udp_recv	zre_udp.c	/^zre_udp_recv (zre_udp_t *self, byte *buffer, size_t length)$/;"	f
+zre_udp_send	zre_udp.c	/^zre_udp_send (zre_udp_t *self, byte *buffer, size_t length)$/;"	f

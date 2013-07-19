@@ -1,0 +1,23 @@
+AUTHOR:		Muhammad Junaid Muzammil
+Dated:		27th January 2013
+
+The software is licences under GNU GPL License. This piece of software makes use of the existing ZyRE framework. It is aimed to be a framework for real-time interoperability. An answer to the "Internet of Things". ZyRE will run on everything that speaks TCP/IP and has space for code. This means smartphones, tablets, laptops, servers, TVs, toasters, ebooks, smart lightbulbs, cameras, and dongles and devices of every denomination.
+
+The way the software addresses some key problems are discussed below.
+
+* *Discovery* - The software uses UDP beacon broadcasts for the discovery of devices connected over the network.
+
+* *Presence* - The presence of nodes are detected by using UDP beacons.
+
+* *Connectivity* - For this software to work the existing nodes must be connected to each other over the local network.
+
+* *Point-to-point messaging* - The Zyre framework allowed the option of point to point messaging using the Whisper mode. Since this wasn't included in the requirements, so it hasn't been used.
+
+* *Group messaging* - The Group messages are send using the zmq router-dealer model.
+
+* *Reliability* - Since there is no central message server used in this framework, the probability of network failures is minimum. The nodes are allowed to recover from each other, therefore the network reliability is satisfactory
+
+
+For installation, refer to the INSTALL file.
+
+

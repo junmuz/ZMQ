@@ -1,0 +1,68 @@
+AUTHOR:		Muhammad Junaid Muzammil
+Dated:		27th January 2013
+
+
+********************** Obtaining zeromq *****************************************************************
+1) Obtain zeromq tar. wget http://download.zeromq.org/zeromq-3.2.2.tar.gz
+
+2) Make sure that libtool, autoconf, automake are installed.
+
+3) Check whether uuid-dev package, uuid/e2fsprogs RPM or equivalent on your system is installed.
+
+4) Unpack the tar.gz source archive. tar -zxvf zeromq-3.2.2.tar.gz
+
+5) Run ./configure, followed by make.
+
+6) To install ØMQ system-wide run sudo make install.
+
+7) On Linux, run sudo ldconfig after installing ØMQ.
+
+**********************************************************************************************************
+************************ Obtaining Redis *****************************************************************
+1) Obtain the redis tar.gz archive. wget http://redis.googlecode.com/files/redis-2.6.9.tar.gz
+
+2) Unpack the tar.gz source archive.  tar -xzvf redis-2.6.9.tar.gz
+
+3) cd redis-2.6.9
+
+4) make followed by sudo make install
+
+**********************************************************************************************************
+************************ Obtaining Protobuf **************************************************************
+1) Obtain the protobuf sources. wget http://protobuf-c.googlecode.com/files/protobuf-c-0.15.tar.gz
+
+2) Unpack the tar.gz source archive. tar -zxvf protobuf-c-0.15.tar.gz
+
+3) cd protobuf-c
+
+4) make followd by sudo make install
+
+
+**********************************************************************************************************
+****************** Installing czmq ***********************************************************************
+1) Obtain the czmq from the git repo git clone git://github.com/zeromq/czmq
+
+2) Make sure that libtool, autoconf, automake are installed.
+
+3) Check whether uuid-dev package, uuid/e2fsprogs RPM or equivalent on your system is installed.
+
+4) Unpack the .tar.gz source archive.
+
+5) Run ./configure, followed by make.
+
+6) To install ØMQ system-wide run sudo make install.
+
+7) On Linux, run sudo ldconfig after installing CZMQ.
+
+***********************************************************************************************************
+******************* Executing the sources *****************************************************************
+1) The sources has been tested over Linux platform. To compile it, execute the following command
+	make build
+
+2) The client requires two arguments, redis database IP address and Messenger Login name. To execute the client, run it as follows.
+
+	./client <REDIS_IP> <Messenger Login>
+
+***********************************************************************************************************
+
+
